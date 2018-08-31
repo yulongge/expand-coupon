@@ -1,0 +1,54 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "globals": {
+    "escape": false,
+    "unescape": false,
+    "wx": true,
+    "getCurrentPages": true,
+    "getApp": true,
+    "Page": true,
+    "App": true,
+    "Component": true
+  },
+  "plugins": [
+    "babel"
+  ],
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": ["warn", 2, {
+      "SwitchCase": 1,
+      "VariableDeclarator": 2,
+      "MemberExpression": 1,
+      "ObjectExpression": 1
+    }],
+    "no-useless-escape": ["off"],
+    "no-mixed-spaces-and-tabs": ["error", true],
+    "no-duplicate-case": "error",
+    "no-spaced-func": "error",
+    "no-with": "error",
+    "block-scoped-var": "error",
+    "brace-style": ["off"],
+    "default-case": "error",
+    "no-extra-boolean-cast": ["off"],
+    "no-empty": ["error", {
+      "allowEmptyCatch": true
+    }],
+    "no-unused-vars": ["warn", {
+      "vars": "all",
+      "args": "after-used",
+      "varsIgnorePattern": "[iI]gnored",
+      "argsIgnorePattern": "^(res|rst|e|evt|event|ex|err|reject|progressEvent)$"
+    }],
+    "no-console": "off"
+  }
+}
