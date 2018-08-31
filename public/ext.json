@@ -1,0 +1,9 @@
+{
+  "extEnable": true,
+  "extAppid": "wxe7297b6448497193",
+  "directCommit": false,
+  "ext": {
+    "appid": "wxe7297b6448497193",
+    "foo": "bar"
+  }
+}

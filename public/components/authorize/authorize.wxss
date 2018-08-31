@@ -1,0 +1,23 @@
+/*由 src/less/components/authorize/authorize.less 生成，请勿手动修改以免被覆盖！*/
+.authorize-modal {
+  background: #fff;
+  width: 80%;
+  margin: auto;
+  padding: 50rpx 30rpx;
+  border-radius: 20rpx;
+}
+.authorize-modal .msg {
+  font-size: 30rpx;
+  color: #999;
+}
+.authorize-modal .buttons {
+  align-self: stretch;
+  margin-top: 50px;
+}
+.authorize-modal .buttons button,
+.authorize-modal .buttons button:active,
+.authorize-modal .buttons button:hover {
+  display: block;
+  border-radius: 100rem;
+  background: -webkit-gradient(linear, 0 0, right 0, from(#fd4b3b), to(#fd6d42));
+}

@@ -1,0 +1,15 @@
+/*由 src/less/components/countdown/countdown.less 生成，请勿手动修改以免被覆盖！*/
+.countdown-component {
+  display: flex;
+  align-items: baseline;
+}
+.countdown-component > view {
+  font-size: 48rpx;
+  color: #fce6aa;
+  padding: 0rpx 2rpx;
+}
+.countdown-component > text {
+  text-align: center;
+  font-size: 16rpx;
+  color: #c8c8c8;
+}

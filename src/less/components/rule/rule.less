@@ -1,0 +1,66 @@
+@import '/_global.less';
+.component-rule {
+	position: relative;
+	margin: auto;
+	width: 700rpx;
+	box-shadow:0 6px 13px 0 rgba(0,0,0,0.08);
+	margin-top: 25rpx;
+	.rule-con {
+		width: 100%;
+		min-height: 294rpx;
+		background: #fff;
+		border-radius: 13rpx;	
+		padding-top: 38rpx;
+		.title {
+			//background-image: url('@{img}title.png');
+			width:300rpx;
+			height:25rpx;
+			margin: auto;
+			display: flex;
+			align-items: center;
+			.title_lf {
+				width: 65rpx;
+				height:25rpx;
+				background-image: url('@{img}title_lf.png');
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+			.title_rt {
+				width: 65rpx;
+				height:25rpx;
+				background-image: url('@{img}title_rt.png');
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+			.title_msg {
+				flex: 1;
+				font-size:28rpx;
+				color:#787878;
+				text-align: center;
+			}
+		}	
+		.list {
+			padding: 50rpx;
+			.itemcon {
+				display: flex;
+				font-size:20rpx;
+				color:#787878;
+				.ind {
+					width: 30rpx;
+					
+				}
+				.item {
+					flex: 1;
+					
+				}
+			}
+			
+		}	
+
+		.norule {
+			font-size:20rpx;
+			color:#787878;
+			text-align: center;
+		}
+	}
+}

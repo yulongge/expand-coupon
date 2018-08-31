@@ -1,0 +1,36 @@
+<Modal>
+	<view class="mine-modal">
+		<view class="close" bind:tap="_close">
+			<view class="icon"></view>
+			<view class="line"></view>
+		</view>
+		<view class="couponlist">
+			<view class="minemsg">
+				<view class="avatar">
+					<image src="{{userinfo.avatarUrl}}" />
+				</view>
+				<view class="name">
+					<text class="nickname">{{userinfo.nickName}}</text>
+					<text class="tip">{{locale.tip}}</text>
+				</view>
+			</view>
+            <block wx:for="{{coupons}}" wx:key="{{index}}">
+                <view class="item">
+					<view class="item_lf">
+						<view class="con">
+							<text class="name">{{item.coupon_title}}</text>
+							<text class="date">{{locale.date}} {{item.start_time}}</text>
+						</view>
+					</view>
+					<view class="item_md"></view>
+					<view class="item_rt">
+						<view class="con">
+							<button size="mini" bind:tap="_toExchange">{{locale.btn_exchange}}</button>
+						</view>
+						
+					</view>
+				</view>
+            </block>
+        </view>
+	</view> 
+</Modal>

@@ -1,0 +1,60 @@
+<view class="component-coupon">
+	<view class="coupon-con">
+		<view class="coupon-countdown">
+			<view class="showtime">
+				<view class="con">
+					<text class="tip">{{locale.showtime}}</text>
+					<CountDown class="countdown" wx:if="{{timeto}}" timeto="{{timeto}}"/>
+				</view>
+				
+			</view>
+			<view class="avatar">
+				<image class="img" src="{{data.activity_avatarUrl}}" />
+			</view>	
+		</view>
+		<view class="coupon-show">
+			<image src="{{data.coupons[0].img}}" class="couponImg"/>
+		</view>
+		<text class="name">{{data.coupons[0].coupon_title}}</text>
+		<view class="btn">
+			<button
+				open-type="getUserInfo" 
+				bindgetuserinfo="_onUserInfo">
+				{{ locale.btn }}
+			</button>
+		</view>
+	</view>
+</view>
+<block wx:if="{{showCelebrateModal}}">
+	<view class="coupon_modal">
+		<view class="icon"></view>
+		<view class="tip_icon"></view>
+		<view class="tip">{{locale.gifttip}}{{data.coupons[0].coupon_title}}</view>
+		<view class="couponMsg">
+			<view class="msg">
+				<view class="msg_con">
+					<view class="card">
+						<view class="card_con">
+							<text class="name">{{data.coupons[0].coupon_title}}</text>
+							<text class="date">{{locale.date}} {{start_date}} - {{end_date}}</text>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="btn">
+			<button
+				wx:if="{{!isAuthorize}}"
+				open-type="getUserInfo" 
+				bindgetuserinfo="_onGetUserInfo">
+				{{locale.want_expand}}
+			</button>
+			<button
+				wx:if="{{isAuthorize}}"
+				open-type="share" >
+				{{locale.want_expand}}
+			</button>
+		</view>
+	</view>
+	<view class="shade"></view>
+</block>

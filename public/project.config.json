@@ -1,0 +1,56 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.3",
+	"appid": "wxd34a73fd1f1a4f6b",
+	"projectname": "expand",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": -1,
+					"name": "msg",
+					"pathName": "pages/msg/msg",
+					"query": ""
+				},
+				{
+					"id": 8,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": "suid=1861737699&business=2&bid=200106&brid=20113&sid=21568&tid=103"
+				},
+				{
+					"id": -1,
+					"name": "exchange",
+					"pathName": "pages/exchange/exchange",
+					"query": ""
+				}
+			]
+		}
+	}
+}

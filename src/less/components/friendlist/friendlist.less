@@ -1,0 +1,97 @@
+@import '/_global.less';
+.component-friendlist {
+	position: relative;
+	margin: auto;
+	width: 700rpx;
+	box-shadow:0 6px 13px 0 rgba(0,0,0,0.08);
+	margin-top: 25rpx;
+	.friendlist-con {
+		width: 100%;
+		min-height: 294rpx;
+		background: #fff;
+		border-radius: 13rpx;
+		box-sizing: border-box;
+		padding-top: 38rpx;
+		.title {
+			//background-image: url('@{img}title.png');
+			width:300rpx;
+			height:25rpx;
+			margin: auto;
+			display: flex;
+			align-items: center;
+			.title_lf {
+				width: 65rpx;
+				height:25rpx;
+				background-image: url('@{img}title_lf.png');
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+			.title_rt {
+				width: 65rpx;
+				height:25rpx;
+				background-image: url('@{img}title_rt.png');
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+			.title_msg {
+				flex: 1;
+				font-size:28rpx;
+				color:#787878;
+				text-align: center;
+			}
+		}	
+		.list {
+			padding: 33rpx;
+			text-align: center;
+			.item {
+				display: flex;
+				font-size: 20rpx;
+				align-items: center;
+				margin: 8rpx 0rpx;
+				.nickname {
+					width: 250rpx;
+					display: flex;
+					align-items: center;
+					font-size:24rpx;
+					color:#6d6c6c;
+					.img {
+						width: 30rpx;
+						height: 30rpx;
+						border-radius: 100%;
+						margin-right: 10rpx;
+					}
+
+				}
+				.nicktitle {
+					font-size:24rpx;
+					color:#999999;
+				}
+				.tip {
+					flex: 1;
+					font-size:24rpx;
+					color:#bdbdbd;
+					text-align: left;
+				}
+				.value {
+					width: 100rpx;
+					font-size:24rpx;
+					color:#f34e17;
+					text-align: center;
+				}
+				.valuetitle {
+					font-size:24rpx;
+					color:#999999;
+				}
+
+			}
+			.itemtitle {
+				margin-bottom: 15rpx;
+			}
+			.nofriend {
+				text-align: center;
+				font-size:24rpx;
+				color:#bdbdbd;
+			}
+		}	
+	}
+}

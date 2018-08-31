@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/exchange/exchange",
+    "pages/h5shell/h5shell",
+    "pages/msg/msg"
+  ],
+  "window": {
+    "backgroundColor": "#33BA73",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false,
+    "navigationBarBackgroundColor": "#33BA73",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "裂变营销",
+	"navigationStyle": "default",
+	"backgroundColorTop": "#33BA73"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}

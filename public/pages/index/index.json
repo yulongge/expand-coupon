@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+	"Authorize": "../../components/authorize/authorize",
+	"Coupon": "../../components/coupon/coupon",
+	"Progress": "../../components/progress/progress",
+	"FriendList": "../../components/friendlist/friendlist",
+	"Rule": "../../components/rule/rule",
+	"Mine": "../../components/mine/mine"
+  }
+}

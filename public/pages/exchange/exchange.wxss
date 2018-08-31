@@ -1,0 +1,71 @@
+/*由 src/less/pages/exchange/exchange.less 生成，请勿手动修改以免被覆盖！*/
+page {
+  background: #f7f7f7;
+}
+.exchange_page {
+  padding-top: 58rpx;
+  text-align: center;
+}
+.exchange_page .exchange {
+  background: #ffffff;
+  box-shadow: 0 9rpx 22rpx 0 rgba(0, 0, 0, 0.06);
+  border-radius: 12rpx;
+  width: 640rpx;
+  height: 479rpx;
+  margin: auto;
+  padding-bottom: 30rpx;
+  margin-bottom: 38rpx;
+}
+.exchange_page .exchange .coupon_img {
+  border-radius: 7rpx;
+}
+.exchange_page .exchange .coupon_img image {
+  width: 640rpx;
+  height: 250rpx;
+}
+.exchange_page .exchange .coupon_msg {
+  text-align: center;
+  font-size: 30rpx;
+  color: #282828;
+  display: block;
+  width: 100%;
+  margin-top: 25rpx;
+}
+.exchange_page .exchange .btn {
+  background-image: linear-gradient(-150deg, #ff5500 0%, #ffb53a 100%);
+  box-shadow: 0 11rpx 13rpx 0 rgba(236, 152, 53, 0.56);
+  border-radius: 53rpx;
+  width: 481rpx;
+  height: 90rpx;
+  margin-top: 29rpx;
+  color: #fff;
+  line-height: 90rpx;
+}
+.exchange_page .exchange .codemsg {
+  background: #f7f7f7;
+  border: 2rpx solid #e8e8e8;
+  border-radius: 8rpx;
+  width: 549rpx;
+  height: 86rpx;
+  margin: auto;
+  line-height: 86rpx;
+  text-align: center;
+  margin-top: 30rpx;
+  margin-bottom: 43rpx;
+}
+.exchange_page .exchange .codemsg .title {
+  font-size: 36rpx;
+  color: #5B5B5B;
+}
+.exchange_page .exchange .codemsg .value {
+  font-size: 36rpx;
+  color: #FF4F3F;
+}
+.exchange_page .exchange .codemsg .tip {
+  font-size: 30rpx;
+  color: #9E9C9C;
+}
+.exchange_page .tip {
+  font-size: 34rpx;
+  color: #817e7e;
+}

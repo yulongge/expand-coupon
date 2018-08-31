@@ -1,0 +1,49 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 222;
+    //animation: slideup 5s 1;
+    .shade {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 33;
+        background: #000;
+        opacity: .74;
+    }
+    .modal-con {
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 44;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .modal-con-con {
+            pointer-events:initial;
+            display: inline-block;
+            overflow: hidden;
+        }
+    }
+}
+
+.modal-slideup {
+    animation: slideup 1s 1;
+}
+
+@keyframes slideup {
+    from {
+        top: 100rpx;
+    }
+    to {
+        top: 0rpx;
+    }
+}

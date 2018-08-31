@@ -1,0 +1,10 @@
+var showprice = function (num, fix) {
+  var v = parseFloat(num || 0) / 100;
+  if (isNaN(v)) {
+    throw new Error(num + 'is not a number');
+  }
+  return v.toFixed(fix);
+};
+module.exports = {
+  show: showprice
+}

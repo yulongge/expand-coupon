@@ -1,0 +1,69 @@
+@import '/_global.less';
+
+page {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+.activity_page {
+	min-height: 100vh;
+	width: 100%;
+	padding: 0rpx;
+	margin: 0rpx;
+	padding-bottom: 300rpx;
+	position: relative;
+	.header_banner {
+		width: 100%;
+		.img {
+			width: 100%;
+		}
+	}
+	.mine {
+		position: absolute;
+		top: 100rpx;
+		right: 0rpx;
+		background:rgba(17,17,17,0.43);
+		border:2rpx solid rgba(7,7,7,0.11);
+		border-top-left-radius:45rpx;
+		border-bottom-left-radius:45rpx;
+		width:147rpx;
+		height:40rpx;
+		display: flex;
+		align-items: center;
+		padding-left: 5rpx;
+		box-sizing: border-box;
+		.mine_icon {
+			width: 30rpx;
+			height: 30rpx;
+			background-image: url('@{img}mine.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		.mine_title {
+			flex: 1;
+			color: #fff;
+			font-size: 20rpx;
+			text-align: center;
+			button {
+				display: unset;
+				width: 100%;
+				background-color: transparent;
+				font-size: 20rpx;
+				text-align: center;
+				color: #fff;
+				line-height: 40rpx;
+				padding: 0;
+
+			}
+		}
+	}
+}
+.noscroll {
+	top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    z-index: 0;
+}

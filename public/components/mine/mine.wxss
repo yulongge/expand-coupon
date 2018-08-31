@@ -1,0 +1,161 @@
+/*由 src/less/components/mine/mine.less 生成，请勿手动修改以免被覆盖！*/
+.mine-modal {
+  position: relative;
+}
+.mine-modal .close {
+  position: relative;
+  width: 100%;
+  height: 82rpx;
+}
+.mine-modal .close .icon {
+  position: absolute;
+  width: 52rpx;
+  height: 52rpx;
+  background-image: url('data:image/png;base64,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');
+  background-size: contain;
+  right: 0rpx;
+}
+.mine-modal .close .line {
+  position: absolute;
+  border: 2rpx solid #ffffff;
+  width: 0rpx;
+  height: 30rpx;
+  right: 25rpx;
+  top: 52rpx;
+}
+.mine-modal .couponlist {
+  background: #fff2d3;
+  border-radius: 12rpx;
+  box-sizing: border-box;
+  max-height: 1000rpx;
+  width: 630rpx;
+  overflow: auto;
+  position: relative;
+  padding-top: 22rpx;
+}
+.mine-modal .couponlist .minemsg {
+  height: 110rpx;
+  width: 590rpx;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.mine-modal .couponlist .minemsg .avatar {
+  width: 114rpx;
+  height: 114rpx;
+}
+.mine-modal .couponlist .minemsg .avatar image {
+  height: 106rpx;
+  width: 106rpx;
+  border: 4rpx solid #fff;
+  border-radius: 100%;
+}
+.mine-modal .couponlist .minemsg .name {
+  flex: 1;
+  padding-left: 25rpx;
+}
+.mine-modal .couponlist .minemsg .name .nickname {
+  display: block;
+  font-size: 30rpx;
+  color: #8f6604;
+}
+.mine-modal .couponlist .minemsg .name .tip {
+  display: block;
+  font-size: 24rpx;
+  color: #b28d36;
+}
+.mine-modal .couponlist .item {
+  width: 590rpx;
+  height: 160rpx;
+  background: #fff;
+  margin: auto;
+  margin-top: 20rpx;
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  background: radial-gradient(circle at center left, transparent 5rpx, #fff 5rpx) center left;
+  background-size: 100% 10%;
+}
+.mine-modal .couponlist .item .item_lf {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.mine-modal .couponlist .item .item_lf .con {
+  flex: 1;
+  padding: 0rpx 40rpx;
+}
+.mine-modal .couponlist .item .item_lf .name {
+  font-size: 34rpx;
+  color: #282828;
+  display: block;
+}
+.mine-modal .couponlist .item .item_lf .date {
+  font-size: 20rpx;
+  color: #7f7f7f;
+  display: block;
+}
+.mine-modal .couponlist .item .item_md {
+  width: 10rpx;
+  background: #fff2d3;
+  background-image: radial-gradient(transparent 0, transparent 2rpx, #fff 2rpx);
+  /* 截取上面生成的渐变图的一部分，相当于截取15px的正方形中有一个直径10px的透明圆点 */
+  background-size: 8rpx 8rpx;
+  /* 根据优惠券div大小进行微调 */
+  background-position: 2rpx 13rpx;
+  position: relative;
+}
+.mine-modal .couponlist .item .item_md::before {
+  content: ' ';
+  position: absolute;
+  width: 20rpx;
+  height: 20rpx;
+  background: #fff2d3;
+  border-radius: 100%;
+  top: -10rpx;
+  left: -4rpx;
+}
+.mine-modal .couponlist .item .item_md::after {
+  content: ' ';
+  position: absolute;
+  width: 20rpx;
+  height: 20rpx;
+  background: #fff2d3;
+  border-radius: 100%;
+  bottom: -10rpx;
+  left: -4rpx;
+}
+.mine-modal .couponlist .item .item_rt {
+  width: 200rpx;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+}
+.mine-modal .couponlist .item .item_rt .con {
+  flex: 1;
+}
+.mine-modal .couponlist .item .item_rt button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1rpx solid #fc533d;
+  border-radius: 100rpx;
+  width: 170rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 24rpx;
+  color: #fb533e;
+  background-color: #fff;
+}
+.mine-modal .couponlist .item .item_rt button:after {
+  border: none;
+}
+.mine-modal .couponlist .item:last-child {
+  margin-bottom: 40rpx;
+}
+.mine-modal .couponlist .item:nth-child(2) {
+  margin-top: 22rpx;
+}

@@ -1,0 +1,20 @@
+<view class="exchange_page">
+	<view class="exchange">
+		<view class="coupon_img">
+			<image src="https://yulongge.github.io/images/expand/coupon.png" />
+		</view>
+		<text class="coupon_msg" selectable="{{true}}">20元膨胀优惠券</text>
+
+		<button wx:if="{{!isExchange}}" class="btn" bind:tap="toExChange">立即兑换</button>
+		<block wx:if="{{isExchange}}">
+			<view class="codemsg">
+				<text class="title">兑换码: </text>
+				<text class="value" selectable="{{true}}">TI9IHQW749</text>
+				<text class="tip">（长按复制）</text>
+			</view>
+		</block>
+	</view>
+	<block wx:if="{{isExchange}}">
+		<text class="tip">请到店后向工作人员出示兑换码</text>
+	</block>
+</view>

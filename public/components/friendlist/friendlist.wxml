@@ -1,0 +1,29 @@
+<view class="component-friendlist">
+	<view class="friendlist-con">
+		<view class="title">
+			<view class="title_lf"></view>
+			<text class="title_msg">{{locale.title}}</text>
+			<view class="title_rt"></view>
+		</view>
+		<view class="list">
+			<view class="item itemtitle">
+				<text class="nickname nicktitle">{{locale.myfiriend}}</text>
+				<text class="tip"> </text>
+				<text class="value valuetitle">{{locale.helpvalue}}</text>
+			</view>
+			<block wx:for="{{data}}" wx:key="{{item.id}}">
+				<view class="item">
+					<view class="nickname">
+						<image class="img" src="{{item.avatarUrl}}" />
+						{{item.nickName}}
+					</view>
+					<text class="tip">{{locale.tip}}</text>
+					<text class="value">+ {{item.help_value}}</text>
+				</view>
+			</block>
+			<block wx:if="{{data.length === 0}}">
+				<text class="nofriend">{{locale.nofriend}}</text>
+			</block>
+		</view>
+	</view>
+</view>

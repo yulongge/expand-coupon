@@ -1,0 +1,21 @@
+<view class="component-rule">
+	<view class="rule-con">
+		<view class="title">
+			<view class="title_lf"></view>
+			<text class="title_msg">{{locale.title}}</text>
+			<view class="title_rt"></view>
+		</view>
+		<view class="list" wx:if="{{data.length}}">
+			<block wx:for="{{data}}" wx:key="{{item}}">
+				<view class="itemcon">
+					<text class="ind">{{index+1}}. </text>
+					<text class="item">{{item}}</text>
+				</view>
+				
+			</block>
+		</view>
+		<view class="list norule" wx:else>
+			<text>暂无规则</text>
+		</view>
+	</view>
+</view>

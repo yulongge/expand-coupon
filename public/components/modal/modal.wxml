@@ -1,0 +1,8 @@
+<view class="modal" >
+  <view class="shade"     bindtap='_closeModalEvent'></view>
+  <view class="modal-con">
+  <view class="modal-con-con">
+    <slot></slot>
+    </view>
+  </view>
+</view>

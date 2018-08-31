@@ -1,0 +1,66 @@
+<view class="component-progress">
+	<view class="progress-con">
+		<view class="couponlist">
+			<block wx:for="{{data.coupons}}" wx:key="{{index}}">
+				<view class="item">
+					<view class="img">
+						<image src="{{item.small_img}}"/>
+					</view>
+					<view class="tip">
+						<text>未获得</text>
+						<view class="cir_l">
+							<view class="circle_lf"></view>
+							<view class="circle_rt"></view>
+						</view>
+						<view class="cir_r">
+							<view class="circle_lf"></view>
+							<view class="circle_rt"></view>
+						</view>
+					</view>
+				</view>
+
+			</block>
+		</view>
+		<view class="progressline">
+			<view class="circle circle_lf">
+				<view class="target reach"></view>
+			</view>
+			<view class="line line_lf">
+				<progress 
+					class="percent" 
+					percent="40" 
+					activeColor="#F34E17" 
+					backgroundColor="transparent" 
+					stroke-width="5"/>
+			</view>
+			<view class="circle circle_md">
+				<view class="target"></view>
+			</view>
+			<view class="line line_rt">
+				<progress 
+					class="percent" 
+					percent="0" 
+					activeColor="#F34E17" 
+					backgroundColor="transparent" 
+					stroke-width="5"/>
+			</view>
+			<view class="circle circle_rt">
+				<view class="target"></view>
+			</view>
+		</view>
+		<view class="msg">
+			<view class="msg_lf">
+				<text>
+					<text>{{locale.tip_1}}</text>
+					<text class="people">3{{locale.tip_unit}}</text>
+					<text>{{locale.tip_2}} {{locale.tip_3}}</text>
+					<text class="people">0{{locale.tip_unit}}</text>
+					<text>{{locale.tip_4}}</text>
+				</text>
+			</view>
+			<view class="msg_rt">
+				<button size="mini" bind:tap="_toExchange" plain="{{true}}">{{locale.btn}}</button>
+			</view>
+		</view>
+	</view>
+</view>

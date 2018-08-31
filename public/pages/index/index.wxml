@@ -1,0 +1,45 @@
+<view 
+	class="activity_page {{noScroll ? 'noscroll' : ''}}"
+	style="background-color:{{backgroundColor}};">
+	<view class="header_banner">
+		<image 
+			class="img" 
+			mode="aspectFit"
+			src="{{activityData.header_img}}" />
+	</view>
+	<Coupon 
+		showCelebrateModal="{{showCelebrateModal}}"
+		isAuthorize="{{isAuthorize}}"
+		currentCoupon="{{currentCoupon}}"
+		data="{{activityData}}"
+		bind:onUserInfo="onUserInfo"
+		bind:setNoScroll="setNoScroll"/>
+	<Progress data="{{activityData}}"/>
+	<FriendList data="{{activityData.friendlist}}"/>
+	<Rule data="{{activityData.activity_desc}}"/>
+	<view class="mine">
+		<view class="mine_icon"></view>
+		<view class="mine_title">
+			<button
+				open-type="getUserInfo" 
+				bindgetuserinfo="onUserInfo">
+				{{ locale.mine.title }}
+			</button>
+		</view>
+	</view>
+</view>
+
+<!-- 授权-->
+<Authorize 
+    wx:if="{{showAuthorize}}" 
+    authorizeMsg="{{authorizeMsg}}" 
+    authorizeBtn="{{authorizeBtn}}"/>
+<Mine 
+	isAuthorize="{{isAuthorize}}"
+	showMine="{{showMine}}"
+	wx:if="{{showMine}}"
+	data="{{mineData}}"
+	bind:showMine="showMine" 
+
+/>
+

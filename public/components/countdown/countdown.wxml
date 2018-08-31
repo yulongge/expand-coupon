@@ -1,0 +1,21 @@
+<wxs module="m">
+module.exports.pad = function(num) {
+  if (num<10) num = "0"+num;
+  return num.toString();
+};
+</wxs>
+
+<view class="countdown-component">
+	<block wx:if="{{ day>0 }}">
+		<view class="h">{{day}}</view>
+		<text>{{locale.day}}</text>
+	</block>
+	<block wx:if="{{ hours>0 }}">
+		<view class="h">{{ m.pad(hours) }}</view>
+		<text>{{locale.hours}}</text>
+	</block>
+	<view class="m">{{ m.pad(minutes) }}</view>
+	<text>{{locale.minutes}}</text>
+	<view class="s">{{ m.pad(seconds) }}</view>
+	<text>{{locale.seconds}}</text>
+</view>

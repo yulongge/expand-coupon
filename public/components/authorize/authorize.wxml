@@ -1,0 +1,14 @@
+<Modal bind:closeModalEvent="confirmCoupons">
+	<view class="authorize-modal">
+		<view class="warn_img">{{ code }}</view>
+		<text class="msg">{{ authorizeMsg }}</text>
+		<view class="buttons">
+			<button 
+				open-type="getUserInfo" 
+				type="primary" 
+				bindgetuserinfo="onUserInfo">
+				{{ authorizeBtn }}
+			</button>
+		</view>
+	</view> 
+</Modal>
